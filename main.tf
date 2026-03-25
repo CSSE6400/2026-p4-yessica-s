@@ -56,5 +56,5 @@ resource "aws_security_group" "hextris-server" {
 }
 
 output "hextris-url" {
-    value = "http://${aws_instance.hextris-server.public_ip}/"
+  value = aws_instance.hextris-server.public_ip
 }
